@@ -1,0 +1,223 @@
+ 
+/* -------------------------------------- 
+Table of contents 
+1. menu and banner
+2. page layout with flex box 
+3. text and image format classes 
+4. js file fomatting 
+-------------------------------------- */
+
+
+/*menu and banner*/
+ #bannerimg {
+     width: 100%;
+     height: 15vw;
+}
+
+#deepThoughts{
+
+   display: block;
+   margin-left:auto;
+   margin-right:auto;
+}
+#projectimg{
+   width:40%;
+   height: 40%;
+   display: block;
+   margin-left:auto;
+   margin-right:auto;
+}
+ .menu {
+     display: flex;
+     border: 5px solid #000000;
+     padding: 2px;
+     margin: 1px;
+}
+ .menu a {
+     color: #ffffff;
+     text-decoration: none;
+     text-align: center;
+     font-family: 'Bangers', cursive;
+     font-size: 22px;
+}
+ .box {
+     flex-grow: 1;
+     background: #262018;
+     color: #262018;
+     text-align: center;
+     padding: 10px;
+     border: 10px solid #73624D;
+}
+.flexbox-container {
+   display: flex;
+   border: 10px solid #000000;
+   margin-bottom: 20px;
+   align-content: space-around;
+ 
+}
+ 
+.flexbox-item {
+   width: 200px;
+   margin: 5px;
+   padding: 10px;
+   border: 1px solid #000000;
+   background-color:#73624D;
+}
+ 
+.flexbox-item-1 {
+   max-height: 300px;
+   width: 300px;
+   font-family: 'Optima', sans-serif;
+   font-size: 28px;
+}
+ 
+.flexbox-item-2 {
+    min-height: 300px;
+   max-height: 300px;
+   width: 150px;
+   flex: 1;
+      font-family: 'Optima', sans-serif;
+   font-size:250%;
+}
+ 
+.flexbox-item-3 {
+   max-height: 300px;
+   width: 300px;
+      font-family: 'Optima', sans-serif;
+      font-size: 160%;
+}
+
+/*not used yet*/
+ .another-container {
+     display: flex;
+     border: 5px solid #000000;
+     align-content: space-around;
+     padding: 40px;
+     margin-top: 20px;
+     font-family: Arial;
+     font-size: 28px;
+     
+}#main-nav {
+    margin-top: 3px;
+}
+
+#main-nav a {
+    color: #f6f7f8;
+    background: #73624D;
+    height: 64px;
+    
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+}
+
+#main-nav a:hover {
+    background:#40372C;
+}
+
+#main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+#main-nav li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#main-nav li:hover .submenu > li {
+    z-index:1;
+    display: block;
+    flex-direction: column;
+    top: 0px;
+}
+
+.submenu li {
+    display: none;
+    position: absolute;
+    top: 0px;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li:hover .submenu-2 li {
+    display: block;
+}
+
+.submenu-2 li {
+    display: none;
+}
+
+.submenu-2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 75%;
+    width: 250px;
+}
+
+.arrow {
+    margin-left: 8px;
+    color: #eee;
+    font-size: 12px;
+}
+
+/*text and image format classes*/
+
+
+body {
+    background-color: #636A73;
+    }
+
+ img {
+     border: 1px solid #000000;
+     padding: 1px;
+     margin: 1px;
+     width: 200px;
+     height: 200px;
+}
+ div {
+     display: block;
+}
+/*js file formatting*/
+ canvas {
+     border: thin solid #A69580;
+     position: relative;
+     margin: 1px;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, 0%);
+}
+/* Color Theme Swatches in Hex */
+ .Miniature-Size-Landscape--season1--1-hex {
+     color:#636A73;
+}
+ .Miniature-Size-Landscape--season1--2-hex {
+     color: #262018;
+}
+ .Miniature-Size-Landscape--season1--3-hex {
+     color:#73624D;
+}
+ .Miniature-Size-Landscape--season1--4-hex {
+     color:#40372C;
+}
+ .Miniature-Size-Landscape--season1--5-hex {
+     color:#636A73;
+}
+ 
